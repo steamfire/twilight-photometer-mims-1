@@ -1795,6 +1795,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
+<text x="81.28" y="71.12" size="1.27" layer="91">Need to figure out power from batteries or regulator - data logger or multimeter?  See the article</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
