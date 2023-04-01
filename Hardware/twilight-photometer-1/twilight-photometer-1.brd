@@ -186,14 +186,19 @@
 <wire x1="50.8" y1="3.81" x2="50.8" y2="50.8" width="0.254" layer="20"/>
 <wire x1="50.8" y1="50.8" x2="0" y2="50.8" width="0.254" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0.254" layer="20"/>
-<text x="11.43" y="43.18" size="1.778" layer="21" font="vector" ratio="15">Twilight Photometer v1</text>
-<text x="3.81" y="36.83" size="1.778" layer="21" font="vector" ratio="15">Dan Bowen - Sarah Schubert</text>
+<text x="25.4" y="41.91" size="2.54" layer="21" font="vector" ratio="15" align="bottom-center">Twilight Photometer
+v1</text>
 <text x="36.83" y="45.72" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">Orig Forrest Mims III</text>
-<text x="3.81" y="33.02" size="1.778" layer="21" font="vector" ratio="15">CC-BY-SA</text>
 <text x="33.528" y="1.397" size="1.778" layer="21" font="vector" ratio="15">+</text>
 <text x="36.322" y="1.397" size="1.778" layer="21" font="vector" ratio="15">-</text>
 <text x="45.085" y="34.925" size="1.27" layer="21" font="vector" ratio="15">LOW</text>
 <text x="45.085" y="29.845" size="1.27" layer="21" font="vector" ratio="15">HI</text>
+<text x="44.958" y="20.955" size="1.778" layer="21" font="vector" ratio="15">+</text>
+<text x="44.958" y="18.161" size="1.778" layer="21" font="vector" ratio="15">-</text>
+<text x="21.59" y="38.1" size="1.778" layer="21" font="vector" ratio="15" rot="R180">Dan Bowen
+Sarah Schubert
+CC-BY-SA
+2023</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -691,7 +696,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="NAME" x="16.51" y="7.493" size="0.8128" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-08261" x="15.24" y="-29.21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SF_SKU" value="COM-00102 " x="15.24" y="-29.21" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="21.717" y="2.032" size="1.27" layer="27" font="vector" ratio="15" align="top-center"/>
+<attribute name="VALUE" x="21.717" y="2.032" size="1.27" layer="21" font="vector" ratio="15" align="top-center"/>
 </element>
 <element name="S2" library="SparkFun-Switches" package="SWITCH_SPDT_PTH_11.6X4.0MM_LOCK" value="GAIN" x="41.91" y="33.02" smashed="yes">
 <attribute name="NAME" x="43.561" y="40.005" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
@@ -709,10 +714,10 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="J1" library="SparkFun-Connectors" package="1X02_LOCK_LONGPADS" value="BATT IN" x="34.29" y="5.08" smashed="yes">
 <attribute name="NAME" x="33.02" y="6.731" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="32.385" y="8.001" size="1.27" layer="27" font="vector" ratio="15"/>
+<attribute name="VALUE" x="32.385" y="8.001" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="J2" library="SparkFun-Connectors" package="1X02_LOCK_LONGPADS" value="Signal Out" x="41.91" y="21.59" smashed="yes" rot="R270">
-<attribute name="VALUE" x="38.1" y="15.494" size="1.27" layer="27" font="vector" ratio="15"/>
+<attribute name="VALUE" x="38.1" y="15.494" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="H1" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="6.35" y="44.45" smashed="yes"/>
 <element name="H2" library="SparkFun-Hardware" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="44.45" y="44.45" smashed="yes"/>
@@ -817,4 +822,10 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

@@ -34,3 +34,5 @@
 *.eps
 # file locks introduced since 7.x
 *.lck
+Hardware/twilight-photometer-1/twilight-photometer-1_2023-04-01.1.zip
+*.zip
